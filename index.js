@@ -10,7 +10,7 @@ const client = new Client({
 
 require("express")()
   .get("/", (_, res) => res.send("Works"))
-  .listen(80);
+  .listen(process.env.PORT);
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
