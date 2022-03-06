@@ -44,4 +44,4 @@ function getpass(passLength) {
   return pass;
 }
 
-client.login("OTQ5OTUzMzMzMDcyODk2MDcx.YiR2-w.6CzPMUzCtZjgddNJMrxfeb45T-c");
+client.login(process.env.TOKEN);
